@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "../Button/Button";
 
-const PizzaBlock = ({ title, price, imageUrl, types, sizes }) => {
+const PizzaBlock = ({ name, price, imageUrl, types, sizes }) => {
   const [activeType, setActiveType] = useState(0);
   const [activeSizes, setActiveSizes] = useState(0);
   const typeNames = ["тонкое", "традиционное"];
@@ -9,7 +9,7 @@ const PizzaBlock = ({ title, price, imageUrl, types, sizes }) => {
   return (
     <div className="pizza-block">
       <img className="pizza-block__image" src={imageUrl} alt="Pizza" />
-      <h4 className="pizza-block__title">{title}</h4>
+      <h4 className="pizza-block__title">{name}</h4>
       <div className="pizza-block__selector">
         <ul>
           {types.map((typeId) => (
