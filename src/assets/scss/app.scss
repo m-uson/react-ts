@@ -45,6 +45,12 @@ body {
     font-size: 38px;
     margin-top: 60px;
     margin-bottom: 50px;
+    @media (max-width: 768px) {
+      font-size: 33px;
+    }
+    @media (max-width: 425px) {
+      font-size: 30px;
+    }
   }
 
   &__items {
@@ -85,8 +91,14 @@ body {
 
       .sort {
         padding-left: 20px;
+        @media (max-width: 320px) {
+          padding-left: 0;
+        }
         b {
           display: none;
+          @media (max-width: 818px) {
+            display: block;
+          }
         }
       }
     }
