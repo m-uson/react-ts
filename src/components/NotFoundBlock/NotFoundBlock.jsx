@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./notFoundBlock.module.scss";
+import styles from "./NotFoundBlock.module.scss";
 
 const NotFoundBlock = () => {
   return (
