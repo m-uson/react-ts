@@ -4,8 +4,8 @@
 
     a {
       text-align: center;
-      width: 45px;
       line-height: 42px;
+      width: 45px;
       height: 45px;
       border: 1px solid #fe5f1e;
       border-radius: 30px;
@@ -13,7 +13,10 @@
       cursor: pointer;
       display: inline-block;
       color: #fe5f1e;
-
+      @media (max-width: 320px) {
+        width: 42px;
+        height: 42px;
+      }
       &:hover {
         background-color: #fe5f1e;
         color: #fff;
